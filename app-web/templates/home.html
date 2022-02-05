@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../static/style.css">
+  <title>Student Performance Prediction App</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm">
+    <a class="navbar-brand mx-3">SP</a>
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link " aria-current="page" href="/home">Home</a>
+          <a class="nav-link" href="/form">Student Form</a>
+          <a class="nav-link " aria-current="page" href="/prediction1">Prediction 1</a>
+          <a class="nav-link " aria-current="page" href="/prediction2">Prediction 2</a>
+          <a class="nav-link" href="/dataset">Dataset</a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrapper">
+    <div class="container">
+      <h1 class="text-center mt-3"><i class="fas fa-graduation-cap"></i></h1>
+      <h2 class="display-6 text-center m-3">Welcome to the Student performance prediction App</h2>
+      <br>
+      <div class="container" style="text-align:justify; text-justify: inter-word;width: 90%;">
+        <p class="lead m-4" style="font-size: 1.4rem;">Our project uses a dataset collected by the UCI
+          machine
+          learning
+          repository but
+          initially provided by <strong>Paulo Cortez</strong> , an Associate professor at the Department of Information
+          Systems at <strong> Minho university </strong> .
+          <br>
+          The dataset attributes include demographic, social, and school-related features as well as student grades.
+          <br><br>
+          Click <a href="https://archive.ics.uci.edu/ml/datasets/Student+Performance" target="_blank">here </a> for more
+          information about the dataset.
+          <br>
+          For now, let's make some predictions!</p>
+        <a href="/form" class="btn btn-primary btn-lg" role="button" aria-pressed="true" style="float: right;">Get
+          Started</a>
+      </div>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

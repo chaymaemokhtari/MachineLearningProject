@@ -1,0 +1,8 @@
+-l'application est realisee a l'aide du framework flask 
+
+requirements : 
+	pip install flask
+	pip install numpy
+	pip install pandas
+	pip install joblib
+	pip install sklearn

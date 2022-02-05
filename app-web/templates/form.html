@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Student Performence Predicttion App</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm" >
+        <a class="navbar-brand mx-3" >SP</a>
+        <div class="container-fluid" >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link " aria-current="page" href="/home">Home</a>
+              <a class="nav-link" href="/form">Student Form</a>
+              <a class="nav-link " aria-current="page" href="/prediction1">Prediction 1</a>
+              <a class="nav-link " aria-current="page" href="/prediction2">Prediction 2</a>
+              <a class="nav-link" href="/dataset">Dataset</a>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="container border mt-3  bg-white" style="max-width: 900px;">
+    <form action="#" method="POST">
+        <h1 class="header text-center m-1">Fill in the form with the student's informations</h1>
+        <hr>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label">Last Name</label>
+                    <input type="text" name="lastName" class="form-control"  required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label  class="form-label">First Name</label>
+                    <input type="text" name="firstName" class="form-control"  required>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label class="form-label">Absenses</label>
+                    <input type="number" name="absences" class="form-control" min="0" max="93" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label  class="form-label">number of past class failures</label>
+                    <select class="form-select" name="failures" aria-label="Default select example">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label  class="form-label">School support</label>
+                    <select class="form-select" name="schoolsup" aria-label="Default select example" required>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                      </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label  class="form-label">Reason to choose this school</label>
+                    <select class="form-select" name="reason" aria-label="Default select example" required>
+                        <option value="home">home</option>
+                        <option value="reputation">reputation</option>
+                        <option value="course">course</option>
+                        <option value="other">other</option>
+                    </select>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label  class="form-label">Mother’s job</label>
+                    <select class="form-select" name="Mjob" aria-label="Default select example" required>
+                        <option value="teacher">teacher</option>
+                        <option value="health">health</option>
+                        <option value="services">services</option>
+                        <option value="at_home">at home</option>
+                        <option value="other">other</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label  class="form-label">Father’s education</label>
+                    <select class="form-select" name="Fedu" aria-label="Default select example" required>
+                        <option value="0">none</option>
+                        <option value="1">primary education</option>
+                        <option value="2">5th to 9th grade</option>
+                        <option value="3">secondary education</option>
+                        <option value="4">higher education</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label  class="form-label">going out with friends (1-low 5-high)</label>
+                    <select class="form-select" name="goout" aria-label="Default select example" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label  class="form-label">weekly study time</label>
+                    <select class="form-select" name="studytime" aria-label="Default select example" required>
+                        <option value="1"> &lt; 2 hours</option>
+                        <option value="2"> 2 to 5 hours</option>
+                        <option value="3"> 5 to 10 hours</option>
+                        <option value="4">&gt; 10 hours </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label  class="form-label">Student’s guardian</label>
+                    <select class="form-select" name="guardian" aria-label="Default select example" required>
+                        <option value="mother">mother</option>
+                        <option value="father">father</option>
+                        <option value="other">other</option>
+                    </select>
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label  class="form-label">Extra paid classes</label>
+                    <select class="form-select" name="paid" aria-label="Default select example" required>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label  class="form-label">home to school travel time</label>
+                    <select class="form-select" name="traveltime" aria-label="Default select example" required>
+                        <option value="1"> &lt; 15 mins</option>
+                        <option value="2"> 15 to 30 mins</option>
+                        <option value="3">  30 min to 1 hour</option>
+                        <option value="4">&gt; 1 hour  </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label">First Period grade</label>
+                    <input type="number" name="G1" min="0" max="20" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label">Final grade</label>
+                    <input type="number" name="G3" min="0" max="20" class="form-control">
+                </div>
+            </div>
+        
+        </div>
+      
+        <input type="submit" value="submit" class="btn btn-primary mb-3"> 
+    </form>
+   </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
